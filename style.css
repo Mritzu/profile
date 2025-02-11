@@ -1,0 +1,120 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #F3EEEA;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin-top: 80px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3.5rem;
+}
+
+p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 50%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Change to column direction */
+    align-items: center; /* Center items horizontally */
+    gap: 5px;
+    padding: 20px;
+}
+#icons ul {
+    display: flex;
+    flex-direction: row; /* Change to row direction */
+    list-style-type: none;
+    padding: 0;
+    gap: 20px; /* Add some space between icons */
+    margin-top: -15px;
+}
+.column {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px; /* Add space between columns */
+}
+.pfp{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h2 {
+    text-align: center;
+    border-bottom: 2px solid #B0A695;
+    padding-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #776B5D;
+}
+
+a:hover {
+    text-decoration:wavy;
+}
+button {
+    background-color: #B0A695;
+    color: #B0A695; /* Text color */
+    padding: 10px 20px; /* Increase padding for larger buttons */
+    font-size: 16px; /* Increase font size */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    width: 100%;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+button:hover {
+    background-color: #776B5D; /* Slightly darker beige on hover */
+    color: #fff; /* Change text color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+@media (max-width: 600px) and (max-width: 900px) {
+    .container {
+        flex-direction: column; /* Ensure the columns stack vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .column {
+        width: 80%; /* Make columns take full width */
+        margin-bottom: 20px; /* Add space between columns */
+    }
+    button {
+        background-color: #B0A695;
+        color: #fff; /* Text color */
+        padding: 10px 20px; /* Increase padding for larger buttons */
+        font-size: 16px; /* Increase font size */
+        border: none; /* Remove default border */
+        border-radius: 5px; /* Add rounded corners */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        width: 100%;
+        transition: all 0.3s ease; /* Smooth transition for all properties */
+    }
+    button:hover {
+        background-color: #776B5D; /* Slightly darker beige on hover */
+        color: #000; /* Change text color on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+        transform: scale(1.05); /* Slightly increase size on hover */
+    }
+}
